@@ -6,6 +6,8 @@ const black = Colors.black;
 const white = Colors.white;
 const transparent = Colors.transparent;
 
+const customBlue = Color(0xff4069C3);
+
 List<SplashModel> splashList = [
   SplashModel(
       heading: 'Training',

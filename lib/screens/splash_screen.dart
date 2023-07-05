@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:l1_fitness_app/screens/home_screen.dart';
 
 import '../exports_all.dart';
 
@@ -13,7 +14,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   int pageIndex = 0;
-  
+
   final PageController _pageController = PageController(
     initialPage: 0,
   );
@@ -167,6 +168,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       InkWell(
                         onTap: () {
                           log('On Pressed');
+                          HomeScreen.startHomeScreen(context: context);
                         },
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.35,
